@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" th:href="@{bootstrap.min.css}"/>
+    <title>Add User</title>
+</head>
+<body>
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+
+    </tr>
+    <tr th:each="product: ${search}">
+        <td th:text="${product.name}"></td>
+    </tr>
+</table>
+</body>
+</html>
